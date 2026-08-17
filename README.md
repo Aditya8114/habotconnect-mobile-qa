@@ -7,7 +7,8 @@
 
 ## Candidate Contact
 - **Full Legal Name:** Aditya Kumar 
-- **Email:** aditya0771963@gmail.com 
+- **Email:** aditya0771963@gmail.com
+- **Phone:** +918804612451
 
 ## Objective
 Design a scalable mobile-first quality strategy for the Parent → Learning Support Assistant (LSA) booking journey, covering:
