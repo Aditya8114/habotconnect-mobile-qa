@@ -6,9 +6,8 @@
 > **Important:** This repository is a proposed/mock QA implementation based on the Hiring Project Form. No HabotConnect application source code or staging build was supplied with the assessment. Test scripts and results in this repository therefore demonstrate the intended automation architecture rather than claiming execution against a real HabotConnect build.
 
 ## Candidate Contact
-- **Full Legal Name:** YOUR FULL NAME
-- **Email:** YOUR EMAIL ADDRESS
-- **Phone:** YOUR PHONE NUMBER
+- **Full Legal Name:** Aditya Kumar 
+- **Email:** aditya0771963@gmail.com 
 
 ## Objective
 Design a scalable mobile-first quality strategy for the Parent → Learning Support Assistant (LSA) booking journey, covering:
