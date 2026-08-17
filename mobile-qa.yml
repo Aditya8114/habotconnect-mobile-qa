@@ -1,0 +1,39 @@
+name: Mobile QA Quality Gate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Unit and integration tests
+        run: npm test
+
+      - name: Formatting check
+        run: npm run format:check
+
+      - name: Performance profiling demo
+        run: npm run performance
+
+      # The real device E2E, accessibility and mobile build stages should be
+      # enabled after the actual application build and device infrastructure
+      # are provided.

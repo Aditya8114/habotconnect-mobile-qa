@@ -1,0 +1,31 @@
+# Mock/example Maestro flow.
+# Requires a real mobile build and matching accessibility labels/test IDs.
+appId: com.habotconnect.app
+
+---
+- launchApp
+
+- tapOn: "Login"
+
+- tapOn: "Email"
+- inputText: "parent@test.com"
+
+- tapOn: "Password"
+- inputText: "Password123"
+
+- tapOn: "Login"
+- assertVisible: "Home"
+
+- tapOn: "Find LSA"
+- assertVisible: "Learning Support Assistants"
+
+- tapOn: "Demo Learning Support Assistant"
+- tapOn: "Book Now"
+
+- tapOn: "Select Date"
+- tapOn: "18"
+
+- tapOn: "10:00"
+- tapOn: "Confirm Booking"
+
+- assertVisible: "Booking Confirmed"
